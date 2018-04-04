@@ -3,6 +3,10 @@ html {
     height: 100%;
 }
 
+/* ================================
+Navigation Bar
+================================= */
+
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
@@ -17,9 +21,12 @@ html {
 	padding: 0 15px 5px;
 }
 
-/*Home section*/
+/* ================================
+Home
+================================= */
+
 .intro-header { 
-    padding-top: 75px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 75px; /* For other pages, make sure there is 75px of padding to ensure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     background: url('https://www.officelovin.com/wp-content/uploads/2016/02/bubble-prague-office-5.jpg') no-repeat center center fixed;
@@ -45,11 +52,6 @@ html {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-/*small header*/
-.intro-message > h3 {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  color: black;
-}
 
 @media(max-width:767px) {
     .intro-message {
@@ -60,26 +62,67 @@ html {
         font-size: 3em;
     }
 
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
     .intro-divider {
         width: 100%;
     }
 }
+
 /*line*/
 hr.intro-divider {
   border: 1px outset rgba(255, 255, 255, 0.2);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
   width: 100%;
 }
+
+/* ================================
+About
+================================= */
+
+#about .about-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content h2 {
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: left;
+}
+
+#about .content h3 {
+  color: #777;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+  text-align: left;
+}
+
+#about .content p {
+  line-height: 26px;
+  text-align: left;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
 /* social buttons */
 .btn {
   display: inline-block;
