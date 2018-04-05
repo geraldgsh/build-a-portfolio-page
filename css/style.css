@@ -4,6 +4,35 @@ html {
 }
 
 /* ================================
+Home Section
+================================= */
+
+.home-section {
+	width: 100%;
+	padding: 150px 0px 150px 0px;
+}
+
+/* --- heading --- */
+.section-heading {
+	margin-bottom: 50px;
+}
+
+.section-heading h2 {
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+.section-heading .heading-line {
+	margin:0 left;
+	display: block;
+	height: 1px;
+	width: 80px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* ================================
 Navigation Bar
 ================================= */
 
@@ -22,7 +51,7 @@ Navigation Bar
 }
 
 /* ================================
-Home
+Start Grid
 ================================= */
 
 .intro-header { 
@@ -75,7 +104,7 @@ hr.intro-divider {
 }
 
 /* ================================
-About
+About Grid
 ================================= */
 
 #about .about-img {
@@ -98,22 +127,6 @@ About
   }
 }
 
-#about .content h2 {
-  color: #333;
-  font-weight: 300;
-  font-size: 24px;
-  text-align: left;
-}
-
-#about .content h3 {
-  color: #777;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
-  font-style: italic;
-  text-align: left;
-}
-
 #about .content p {
   line-height: 26px;
   text-align: left;
@@ -121,6 +134,46 @@ About
 
 #about .content p:last-child {
   margin-bottom: 0;
+}
+
+/* ================================
+Works
+================================= */
+.og-grid {
+	list-style: none;
+	padding: 20px 0px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.og-grid li {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	height: 200px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: none;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
 }
 
 /* social buttons */
